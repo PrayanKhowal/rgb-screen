@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      transition: background-color 2s;
+      background-color: red;
+    }
+  </style>
+  <title>RGB Screen</title>
+</head>
+  <body>
+      <script>
+        const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'purple', 'grey', 'pink'];
+        let i = 0;
+
+        setInterval(() => {
+          document.body.style.backgroundColor = colors[i%8];
+          i++;
+        }, 1000)
+      </script>
+  </body>
+</html>
